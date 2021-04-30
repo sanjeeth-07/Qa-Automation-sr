@@ -1,0 +1,19 @@
+version: '2'
+services:
+  web:
+    build: .
+    entrypoint: npm run dev
+    volumes:
+      - .:/usr/app
+      - /usr/app/node_modules
+    ports:
+      - "8080:3000"
+  cypress:
+    image: "cypress/included:7.2.0"
+    depends_on:
+      - web
+    environment:
+      - CYPRESS_baseUrl=http://localhost:3000
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e
