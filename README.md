@@ -58,3 +58,8 @@ The above code will try to run only the .feature files.
 
 
 
+## Cypress Docker container
+
+Add a new e2e directory which contains the cypress.json file and your integration/spec.js file. 
+Your package.json file doesn't have to include Cypress at all because it's baked into the Cypress Docker image.
+
