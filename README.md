@@ -18,11 +18,11 @@ We’ll add the following to our script under Package.json
 
 Add the following option to our script under Package.json
 
-`cypress-cucumber-preprocessor": {
+`cypress-cucumber-preprocessor": {`
 
-    "nonGlobalStepDefinitions": true
+   ` "nonGlobalStepDefinitions": true`
     
-}`
+`}`
 
 To the file under cypress/plugins/index.js file, add the following code:
 
