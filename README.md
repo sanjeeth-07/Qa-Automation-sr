@@ -26,25 +26,25 @@ Add the following option to our script under Package.json
 
 To the file under cypress/plugins/index.js file, add the following code:
 
-`const cucumber = require('cypress-cucumber-preprocessor').default
+`const cucumber = require('cypress-cucumber-preprocessor').default`
 
-module.exports = (on, config) => {
+`module.exports = (on, config) => {`
 
-  on('file:preprocessor', cucumber())
+  `on('file:preprocessor', cucumber())`
   
-}`
+`}`
 
 goto cypress.json, and give the basic configurations.
-`{
-  "testFiles": "**/*.feature",
+`{`
+ ` "testFiles": "**/*.feature",`
   
-  "ignoreTestFiles": ["*.js", "*.ts", "*.md"],
+`  "ignoreTestFiles": ["*.js", "*.ts", "*.md"],`
   
-  "viewportWidth": 1360,
+ ` "viewportWidth": 1360,`
   
-  "viewportHeight": 790
+  `"viewportHeight": 790`
   
-}`
+`}`
 
 The above code will try to run only the .feature files.
 
