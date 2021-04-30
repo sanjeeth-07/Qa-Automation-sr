@@ -1,8 +1,10 @@
 # Qa-Automation-sr
+
 cypress tests in BDD format.
 
 
 # Steps to install Cypress
+
 `npm install cypress --dev // for npm`
 
 `yarn add cypress --dev // for yarn`
@@ -12,6 +14,7 @@ We’ll add the following to our script under Package.json
 `"cypress": "cypress open"`
 
 # Steps to install Cucumber 
+
 `npm install --save-dev cucumber`
 
 `npm install --save-dev cypress-cucumber-preprocessor`
@@ -50,7 +53,8 @@ The above code will try to run only the .feature files.
 
 
 # Command to run Cypress tests
-npm run cypress
+
+`npm run cypress`
 
 
 
